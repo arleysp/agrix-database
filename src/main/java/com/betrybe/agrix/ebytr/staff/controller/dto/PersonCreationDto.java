@@ -20,6 +20,7 @@ public record PersonCreationDto(
    */
   public Person toEntity() {
     Person person = new Person();
+
     person.setUsername(username);
     person.setPassword(password);
     person.setRole(role);
